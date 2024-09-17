@@ -193,7 +193,7 @@ if ( ! class_exists( 'DualTone_Theme' ) )
             $this->load_text_domain = $theme_params['load_text_domain'] ? true : false;
             
             $this->options = wp_parse_args(
-                get_option( $this->textdomain.'_theme_options' ),
+                get_option( 'dualtone_theme_options' ),
                 $this->default_theme_options
             );
         }
